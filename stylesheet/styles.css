@@ -3,80 +3,103 @@
   padding: 0;
   margin: 0;
   font-family: Inter, sans-serif;
-  font-size: 16px;
 }
 
-/* Upper navbar */
-.upper-nav {
+.flex {
+  display: flex;
+}
+
+.flex-center {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 10vw;
-  font-family: Inter, sans-serif;
+  justify-content: center;
 }
 
-.nav-logo a img {
-  width: 10vw;
+.no-border {
+  border: none;
+  background: none;
 }
 
-.nav-search {
-  display: flex;
+.no-decoration {
+  text-decoration: none;
 }
 
-.nav-search search input {
-  width: 30vw;
-  height: 40px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border: 2px solid #0d6efd;
-  border-right: 0.5px solid #0d6efd;
-  padding-left: 10px;
-}
-
-.nav-search select {
-  width: 10vw;
-  padding: 0px 10px;
-  border-top: 2px solid #0d6efd;
-  border-bottom: 2px solid #0d6efd;
-  font-size: 16px;
-}
-
-.nav-search button {
-  width: 7vw;
-  height: 40px;
-  background-color: #0d6efd;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  color: white;
-  border-color: #0d6efd;
-  font-size: 16px;
-}
-
-.nav-icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.fa-icons {
-  margin: 0px 10px;
+.text-align {
   text-align: center;
 }
 
-.fa-icons a {
-  text-decoration: none;
-  color: #8b96af;
+/* Upper navbar */
+.blue-border {
+  border: 2px solid #0d6efd;
 }
 
-.fa-icons img {
-  width: 20px;
-  height: 20px;
-  margin: auto;
-  color: #8b96af;
+.upper-nav {
+  padding: 10px 10vw;
+  justify-content: space-between;
+}
+
+#menu-button {
+  margin-right: 10px;
+}
+
+.nav-logo {
+  width: 10vw;
+  min-width: 120px;
+}
+
+.fa-icons {
+  margin: 0px 5px;
 }
 
 .fa-icons p {
-  font-size: 12px;
+  color: #8b96af;
+}
+
+.search-box search input,
+.search-box select,
+.search-box button {
+  height: 40px;
+}
+
+#first-search-box search input {
+  width: 30vw;
+  padding-left: 10px;
+  border-right: 0.5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#first-search-box select {
+  padding: 0px 5px;
+}
+
+#first-search-box button {
+  width: 6vw;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #0d6efd;
+  color: white;
+}
+
+#search-box-second {
+  padding: 10px 10vw;
+}
+
+#search-box-second search input {
+  width: 70vw;
+  height: 40px;
+  background-color: #f7fafc;
+  padding-left: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#search-box-second img {
+  padding: 10px;
+  height: 40px;
+  background-color: #f7fafc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 /* Lower navbar */
@@ -96,7 +119,6 @@
 }
 
 .nav-list a {
-  font-size: 16px;
   text-decoration: none;
   margin: 0px 10px;
   color: #1c1c1c;
@@ -104,13 +126,10 @@
 
 .nav-list select {
   border: none;
-  font-size: 16px;
   width: 60px;
 }
 
 .nav-payship {
-  display: flex;
-  align-items: center;
   color: #1c1c1c;
 }
 
@@ -197,4 +216,73 @@ option img {
 .language Select {
   border: none;
   background-color: #f7fafc;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 425px) {
+  .nav-logo {
+    height: 36px;
+  }
+  #first-search-box,
+  #second-icons {
+    display: none;
+  }
+  .fa-icons a img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  * {
+    font-size: 12px;
+  }
+  .nav-logo {
+    height: 40px;
+  }
+  #first-search-box,
+  #second-icons {
+    display: none;
+  }
+  .fa-icons a img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  * {
+    font-size: 14px;
+  }
+  .nav-logo {
+    height: 42px;
+  }
+  #menu-button,
+  #first-icons,
+  #search-box-second {
+    display: none;
+  }
+  .fa-icons a img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  * {
+    font-size: 16px;
+  }
+  .nav-logo {
+    height: 46px;
+  }
+  #menu-button,
+  #first-icons,
+  #search-box-second {
+    display: none;
+  }
+  .fa-icons a img {
+    width: 20px;
+    height: 20px;
+  }
 }

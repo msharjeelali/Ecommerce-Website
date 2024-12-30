@@ -14,48 +14,73 @@
 </head>
 
 <body>
+    <!-- Header which contain navbar -->
     <header>
+        <!-- Navbar container div -->
         <nav class="nav-container">
-            <div class="upper-nav">
-                <div class="nav-logo">
+            <!-- Upper part of navbar -->
+            <div class="flex-center upper-nav">
+                <!-- Brand logo in navbar -->
+                <div id="nav-logo" class="flex-center">
+                    <!-- Menu button for small screen sizes -->
+                    <button id="menu-button" class="no-border"><img src="images/menu.png" alt="Menu Icon"></button>
                     <a href="index.html"><img src="images/logo-colored.svg" alt="Colored Logo"></a>
                 </div>
-                <div class="nav-search">
-                    <search>
-                        <input type="text" name="search" id="search-box" placeholder="Search">
+                <!-- Navbar icons for small screen size -->
+                <div id="first-icons" class="flex-center">
+                    <div class="fa-icons">
+                        <a href="#"><img src="images/shopping_cart.png" alt="Profile Icon"></a>
+                    </div>
+                    <div class="fa-icons">
+                        <a href="#"><img src="images/person.png" alt="Messages Icon"></a>
+                    </div>
+                </div>
+                <!-- Navbar first search box for bigger screen sizes -->
+                <div id="first-search-box" class="flex-center search-box">
+                    <search class="flex">
+                        <input type="text" name="search" id="search-box" class="blue-border" placeholder="Search">
                     </search>
-                    <select id="category">
+                    <select id="category" class="blue-border">
                         <option selected>All category</option>
                         <option>Option 2</option>
                         <option>Option 3</option>
                         <option>Option 4</option>
                         <option>Option 5</option>
                     </select>
-                    <button>Search</button>
+                    <button class="no-border">Search</button>
                 </div>
-                <div class="nav-icons">
-                    <div class="fa-icons">
-                        <a href="#"><img src="images/profile.png" alt="Profile Icon">
+                <!-- Navbar icon for larger screen size -->
+                <div id="second-icons" class="flex-center nav-icons">
+                    <div class="fa-icons text-align">
+                        <a href="#" class="no-decoration"><img src="images/profile.png" alt="Profile Icon">
                             <p>Profile</p>
                         </a>
                     </div>
-                    <div class="fa-icons">
-                        <a href="#"><img src="images/message.png" alt="Messages Icon">
+                    <div class="fa-icons text-align">
+                        <a href="#" class="no-decoration"><img src="images/message.png" alt="Messages Icon">
                             <p>Messages</p>
                         </a>
                     </div>
-                    <div class="fa-icons">
-                        <a href="#"><img src="images/order.png" alt="Heart Icon">
+                    <div class="fa-icons text-align">
+                        <a href="#" class="no-decoration"><img src="images/order.png" alt="Heart Icon">
                             <p>Order</p>
                         </a>
                     </div>
-                    <div class="fa-icons">
-                        <a href="#">
+                    <div class="fa-icons  text-align">
+                        <a href="#" class="no-decoration">
                             <img src="images/cart.png" alt="Cart Icon">
                             <p>Cart</p>
                         </a>
                     </div>
                 </div>
+                <!-- Navbar second search box for small screen size -->
+            </div>
+            <!-- Search box for small screen size -->
+            <div id="search-box-second" class="flex-center search-box">
+                <search class="flex">
+                    <img src="images/search.png" alt="Search Icon">
+                    <input type="text" name="search" id="search-box" class="no-border" placeholder="Search">
+                </search>
             </div>
             <div class="lower-nav">
                 <div class="nav-list">
@@ -74,7 +99,7 @@
                         <option>Option 5</option>
                     </select>
                 </div>
-                <div class="nav-payship">
+                <div class="flex-center nav-payship">
                     <div class="payment">
                         <Select id="langpay">
                             <option val="pak" selected>Pakistan, PKR</option>
