@@ -15,6 +15,10 @@
   justify-content: center;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .no-border {
   border: none;
   background: none;
@@ -28,13 +32,19 @@
   text-align: center;
 }
 
+.padding {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
 /* Upper navbar */
 .blue-border {
   border: 2px solid #0d6efd;
 }
 
 .upper-nav {
-  padding: 10px 10vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
   justify-content: space-between;
 }
 
@@ -42,27 +52,37 @@
   margin-right: 10px;
 }
 
-.nav-logo {
+#nav-logo a img {
   width: 10vw;
-  min-width: 120px;
+  min-width: 100px;
 }
 
 .fa-icons {
   margin: 0px 5px;
 }
 
-.fa-icons p {
+.fa-icons a {
+  width: 3vw;
+}
+
+.fa-icons a img {
+  width: 1.5vw;
+  min-width: 20px;
+}
+
+.fa-icons a p {
   color: #8b96af;
 }
 
 .search-box search input,
 .search-box select,
-.search-box button {
+.search-box button,
+.nav-icons {
   height: 40px;
 }
 
 #first-search-box search input {
-  width: 30vw;
+  width: 25vw;
   padding-left: 10px;
   border-right: 0.5px;
   border-top-left-radius: 5px;
@@ -75,18 +95,20 @@
 
 #first-search-box button {
   width: 6vw;
+  min-width: fit-content;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #0d6efd;
   color: white;
+  padding: 0px 5px;
 }
 
-#search-box-second {
-  padding: 10px 10vw;
+#search-box-second search {
+  flex-grow: 1;
 }
 
 #search-box-second search input {
-  width: 70vw;
+  width: 100%;
   height: 40px;
   background-color: #f7fafc;
   padding-left: 10px;
@@ -106,54 +128,59 @@
 .lower-nav {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
-  padding: 10px 10vw;
-  font-family: Inter, sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
   vertical-align: middle;
-  display: flex;
   justify-content: space-between;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
+  min-width: 100%;
 }
 
 .nav-list a {
-  text-decoration: none;
   margin: 0px 10px;
   color: #1c1c1c;
 }
 
 .nav-list select {
-  border: none;
   width: 60px;
 }
 
-.nav-payship {
-  color: #1c1c1c;
-}
-
-.payment {
+#payment {
   margin: 0px 10px;
 }
 
-.payment select {
-  border: none;
+#payment select {
   padding: 0px 5px;
 }
 
-.shipment {
+#shipment {
   margin: 0px 10px;
-  display: flex;
 }
 
-.shipment select {
-  border: none;
-  margin-left: 5px;
+#shipment select {
+  padding: 0px 5px;
 }
 
-option img {
-  width: 50px;
+#first-nav-items a {
+  text-decoration: none;
+}
+
+#second-nav-items {
+  align-items: center;
+  overflow: auto;
+}
+
+#second-nav-items a {
+  text-decoration: none;
+  background-color: #eff2f4;
+  color: #0d6efd;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  margin-left: 0px;
+}
+
+#second-nav-items::-webkit-scrollbar {
+  display: none;
 }
 
 /* Main Content of Page*/
@@ -166,71 +193,108 @@ option img {
 
 /* Footer */
 .upper-footer {
-  padding: 50px 10vw;
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.upper-footer div {
+  margin: 5px 0px;
+}
+
+#social *,
+#app-link *,
+.col * {
+  margin: 5px 0px;
+}
+
+#footer-nav-links {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: center;
-  height: 250px;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
-.footer-links {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+#social {
+  width: 30%;
 }
 
-.social {
-  width: 24vw;
-  padding-right: 20px;
-}
-
-.social p {
-  margin: 20px 0px;
-}
-
-.social a img {
-  margin: 0px 5px;
+#social div a {
+  width: 10vw;
+  min-width: 100px;
 }
 
 .col {
-  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
 }
 
 .col a {
   display: block;
   text-decoration: none;
-  margin: 10px 0px;
   color: #8b96af;
 }
 
+#app-link {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 20%;
+}
+
+#app-links a img {
+  width: 10vw;
+  min-width: 100px;
+}
+
 .lower-footer {
-  padding: 10px 10vw;
-  height: 70px;
   background-color: #f7fafc;
   border-top: 1px solid #e0e0e0;
-  display: flex;
-  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
   justify-content: space-between;
 }
 
 .language Select {
-  border: none;
   background-color: #f7fafc;
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 425px) {
-  .nav-logo {
-    height: 36px;
+  .padding {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #first-search-box,
-  #second-icons {
+  #second-icons,
+  #first-nav-items,
+  #nav-payment-shipment {
     display: none;
   }
-  .fa-icons a img {
-    width: 24px;
-    height: 24px;
+  .lower-nav {
+    border-top: none;
+  }
+  .upper-footer {
+    flex-direction: column;
+  }
+  #social {
+    width: 60%;
+    text-align: center;
+  }
+  #footer-nav-links {
+    width: 100%;
+    justify-self: stretch;
+  }
+  .col {
+    width: 50%;
+  }
+  #app-link {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -238,16 +302,36 @@ option img {
   * {
     font-size: 12px;
   }
-  .nav-logo {
-    height: 40px;
+  .padding {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   #first-search-box,
-  #second-icons {
+  #second-icons,
+  #first-nav-items,
+  #nav-payment-shipment {
     display: none;
   }
-  .fa-icons a img {
-    width: 24px;
-    height: 24px;
+  .lower-nav {
+    border-top: none;
+  }
+  .upper-footer {
+    flex-direction: column;
+  }
+  #social {
+    width: 50%;
+    text-align: center;
+  }
+  #footer-nav-links {
+    width: 100%;
+    justify-self: stretch;
+  }
+  .col {
+    width: 25%;
+  }
+  #app-link {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -255,17 +339,11 @@ option img {
   * {
     font-size: 14px;
   }
-  .nav-logo {
-    height: 42px;
-  }
   #menu-button,
   #first-icons,
-  #search-box-second {
+  #search-box-second,
+  #second-nav-items {
     display: none;
-  }
-  .fa-icons a img {
-    width: 20px;
-    height: 20px;
   }
 }
 
@@ -273,16 +351,10 @@ option img {
   * {
     font-size: 16px;
   }
-  .nav-logo {
-    height: 46px;
-  }
   #menu-button,
   #first-icons,
-  #search-box-second {
+  #search-box-second,
+  #second-nav-items {
     display: none;
-  }
-  .fa-icons a img {
-    width: 20px;
-    height: 20px;
   }
 }

@@ -19,7 +19,7 @@
         <!-- Navbar container div -->
         <nav class="nav-container">
             <!-- Upper part of navbar -->
-            <div class="flex-center upper-nav">
+            <div class="flex-center upper-nav padding">
                 <!-- Brand logo in navbar -->
                 <div id="nav-logo" class="flex-center">
                     <!-- Menu button for small screen sizes -->
@@ -76,21 +76,23 @@
                 <!-- Navbar second search box for small screen size -->
             </div>
             <!-- Search box for small screen size -->
-            <div id="search-box-second" class="flex-center search-box">
+            <div id="search-box-second" class="flex-center search-box padding">
                 <search class="flex">
                     <img src="images/search.png" alt="Search Icon">
                     <input type="text" name="search" id="search-box" class="no-border" placeholder="Search">
                 </search>
             </div>
-            <div class="lower-nav">
-                <div class="nav-list">
+            <!-- Lower part of navbar -->
+            <div class="flex-center lower-nav padding">
+                <!-- Nav items list for large screens -->
+                <div id="first-nav-items" class="nav-list flex-center">
                     <img src="images/menu.png" alt="Menu Icon">
                     <a href="#">All category</a>
                     <a href="#">Hot offers</a>
                     <a href="#">Gift boxes</a>
                     <a href="#">Projects</a>
                     <a href="#">Menu item</a>
-                    <select id="help">
+                    <select id="help" class="no-border">
                         <option selected>Help</option>
                         <option>Option 1</option>
                         <option>Option 2</option>
@@ -99,9 +101,10 @@
                         <option>Option 5</option>
                     </select>
                 </div>
-                <div class="flex-center nav-payship">
-                    <div class="payment">
-                        <Select id="langpay">
+                <!-- Nav payment and shipment options -->
+                <div id="nav-payment-shipment" class="flex-center">
+                    <div id="payment">
+                        <Select id="langpay" class="no-border">
                             <option val="pak" selected>Pakistan, PKR</option>
                             <option val="usd">English, USD</option>
                             <option val="euro">English, EUR</option>
@@ -110,9 +113,9 @@
                             <option val="australian">English, AUD</option>
                         </Select>
                     </div>
-                    <div class="shipment">
+                    <div id="shipment" class="flex-center">
                         <p>Ship to</p>
-                        <Select id="shipto">
+                        <Select id="shipto" class="no-border">
                             <option val="pkr" selected>PAK</option>
                             <option val="us">US</option>
                             <option val="uk">UK</option>
@@ -120,6 +123,16 @@
                             <option val="france">FRN</option>
                         </Select>
                     </div>
+                </div>
+                <!-- Nav items list for small screens-->
+                <div id="second-nav-items" class="flex nav-list">
+                    <a href="#">All category</a>
+                    <a href="#">Gadget</a>
+                    <a href="#">Clothes</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Fitness</a>
+                    <a href="#">Health</a>
+                    <a href="#">Beauty</a>
                 </div>
             </div>
         </nav>
@@ -156,15 +169,17 @@
         facere.
 
     </div>
+    <!-- Footer -->
     <footer>
-        <div class="upper-footer">
-
-            <div class="social">
-                <a href="index.html">
+        <!-- Container for upper part of footer -->
+        <div class="upper-footer flex-center padding">
+            <!-- Container for brand logo and social links -->
+            <div id="social" class="">
+                <a href=" index.html">
                     <img src="images/logo-colored.svg" alt="Brand Logo">
                 </a>
                 <p>Best information about the company goes here but now lorem ipsum is</p>
-                <div class="social-links">
+                <div id="social-links">
                     <a href="#"><img src="images/facebook.png" alt="Facebook Link"></a>
                     <a href="#"><img src="images/twitter.png" alt="Twitter Link"></a>
                     <a href="#"><img src="images/instagram.png" alt="Instagram Link"></a>
@@ -172,7 +187,8 @@
                     <a href="#"><img src="images/youtube.png" alt="Youtube Link"></a>
                 </div>
             </div>
-            <div class="footer-links">
+            <!-- Container for navigation links -->
+            <div id="footer-nav-links" class="flex-center">
                 <div class="col">
                     <h5>About</h5>
                     <a href="#">About Us</a>
@@ -202,18 +218,20 @@
                     <a href="#">My Orders</a>
                 </div>
             </div>
-            <div class="app-link col">
+            <!-- Container for application download links -->
+            <div id="app-link" class="">
                 <h5>Get app</h5>
                 <a href="#"><img src="images/appstore.png" src="App store link"></a>
                 <a href="#"><img src="images/playstore.png" src="Play store link"></a>
             </div>
         </div>
-        <div class="lower-footer">
-            <div class="copyright">
+        <!-- Conatiner for lower part of footer -->
+        <div class="lower-footer flex-center padding">
+            <div id="copyright">
                 &#174 2023 Copyright
             </div>
-            <div class="language">
-                <Select id="language">
+            <div id="language">
+                <Select id="language" class="no-border">
                     <option val="us" selected>English (US)</option>
                     <option val="uk">English (UK)</option>
                     <option val="canada">English (CAN) </option>
