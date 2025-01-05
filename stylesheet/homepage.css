@@ -5,16 +5,45 @@
   font-family: Inter, sans-serif;
 }
 
+.color-ffffff {
+  background-color: #fff;
+}
+
+.color-f38332 {
+  background-color: #f38332;
+}
+
+.color-55bdc3 {
+  background-color: #55bdc3;
+}
+
 .round-border {
   border-radius: 5px;
   border: 1px solid #e0e0e0;
 }
 
-/* Main section of page */
-
 .content {
-  padding: 20px 10vw;
+  padding: 0px 10vw;
 }
+
+section {
+  border-radius: 5px;
+  border: 1px solid #dee2e7;
+  margin: 20px 0px;
+}
+
+.leftside {
+  width: 22%;
+  padding: 20px;
+}
+
+.rightside {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main section of page */
 
 #main-section {
   background-color: #fff;
@@ -114,15 +143,130 @@
   align-items: center;
 }
 
-.color-f38332 {
-  background-color: #f38332;
+/* deal and offers part */
+
+#deals-offers {
+  height: fit-content;
 }
 
-.color-55bdc3 {
-  background-color: #55bdc3;
+#countdown > h3 {
+  font-size: 20px;
 }
 
-/* Media Queries */
+#countdown > p {
+  color: #8b96af;
+  font-size: 16px;
+}
+
+#timer {
+  margin-top: 10px;
+}
+
+#timer > span {
+  background-color: #424242;
+  color: #fff;
+  padding: 0.25rem;
+  font-size: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 18%;
+}
+
+#timer > span p:nth-child(2) {
+  font-size: 0.5rem;
+}
+
+.dealsitem {
+  width: 20%;
+  border-left: 1px solid #dee2e7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dealsitem > img {
+  width: 100%;
+  height: auto;
+}
+
+.dealsitem > h3 {
+  color: #1c1c1c;
+  font-size: 1rem;
+}
+
+.dealsitem > p {
+  background-color: #ffe3e3;
+  color: #eb001b;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  border-radius: 29px;
+}
+
+/* Block items group */
+
+#home-decor .leftside {
+  background-image: url(../images/homedecor.png);
+  background-size: cover;
+}
+
+#electronics .leftside {
+  background-image: url(../images/electronics.png);
+  background-size: cover;
+}
+
+.leftside > h2 {
+  font-size: 20px;
+  width: 75%;
+}
+
+.leftside > button {
+  padding: 7px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.items-group {
+  height: 257px;
+}
+
+.items {
+  width: 25%;
+  height: 50%;
+  border-left: 1px solid #dee2e7;
+  padding: 15px;
+  position: relative;
+}
+
+.items:nth-child(1),
+.items:nth-child(2),
+.items:nth-child(3),
+.items:nth-child(4) {
+  border-bottom: 1px solid #dee2e7;
+}
+
+.items > h4 {
+  font-size: 16px;
+}
+
+.items > p {
+  font-size: 13px;
+  color: #8b96af;
+}
+
+.items > img {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 30%;
+}
+
+/* media queries */
 
 @media screen and (max-width: 425px) {
   * {

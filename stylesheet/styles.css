@@ -235,6 +235,7 @@ button:hover {
 #social-links a img {
   width: 3vw;
   min-width: 20px;
+  max-width: 30px;
 }
 
 .col {
