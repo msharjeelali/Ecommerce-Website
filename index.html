@@ -20,12 +20,12 @@
         <!-- Navbar container div -->
         <nav class="nav-container">
             <!-- Upper part of navbar -->
-            <div class="flex-center upper-nav padding">
+            <div id="upper-nav" class="flex-between padding">
                 <!-- Brand logo in navbar -->
                 <div id="nav-logo" class="flex-center">
                     <!-- Menu button for small screen sizes -->
-                    <button id="menu-button" class="no-border"><img src="images/menu.png" alt="Menu Icon"></button>
-                    <a href="index.html"><img src="images/logo-colored.svg" alt="Colored Logo"></a>
+                    <img src="images/menu.png" alt="Menu Icon" class="menu-img">
+                    <a href="index.html"><img src="images/logo-colored.svg" alt="Colored Logo" class="logo-img"></a>
                 </div>
                 <!-- Navbar icons for small screen size -->
                 <div id="first-icons" class="flex-center">
@@ -48,10 +48,10 @@
                         <option>Option 4</option>
                         <option>Option 5</option>
                     </select>
-                    <button class="no-border">Search</button>
+                    <button class="blue-button">Search</button>
                 </div>
                 <!-- Navbar icon for larger screen size -->
-                <div id="second-icons" class="flex-center nav-icons">
+                <div id="second-icons" class="flex-center">
                     <div class="fa-icons text-align">
                         <a href="#" class="no-decoration"><img src="images/profile.png" alt="Profile Icon">
                             <p>Profile</p>
@@ -70,24 +70,25 @@
                     <div class="fa-icons  text-align">
                         <a href="#" class="no-decoration">
                             <img src="images/cart.png" alt="Cart Icon">
-                            <p>Cart</p>
+                            <p>My Cart</p>
                         </a>
                     </div>
                 </div>
                 <!-- Navbar second search box for small screen size -->
             </div>
             <!-- Search box for small screen size -->
-            <div id="search-box-second" class="flex-center search-box padding">
+            <div id="search-box-second" class="flex-center padding">
                 <search class="flex">
                     <img src="images/search.png" alt="Search Icon">
                     <input type="text" name="search" id="search-box" class="no-border" placeholder="Search">
                 </search>
             </div>
+            <hr>
             <!-- Lower part of navbar -->
-            <div class="flex-center lower-nav padding">
+            <div id="lower-nav" class="flex-between padding">
                 <!-- Nav items list for large screens -->
                 <div id="first-nav-items" class="nav-list flex-center">
-                    <img src="images/menu.png" alt="Menu Icon">
+                    <img src="images/menu.png" alt="Menu Icon" class="menu-img">
                     <a href="#">All category</a>
                     <a href="#">Hot offers</a>
                     <a href="#">Gift boxes</a>
@@ -137,9 +138,10 @@
                 </div>
             </div>
         </nav>
+        <hr>
     </header>
     <!-- Main content of homepage -->
-    <div class="content">
+    <main class="content">
         <!-- Main section part-->
         <section id="main-section" class="round-border flex">
             <!-- Vertical menu list -->
@@ -157,7 +159,7 @@
             <!-- Banner image -->
             <div id="banner">
                 <h1>Latest trending<br><strong>Electronic items</strong></h1>
-                <button class="no-border round-border">Learn more</button>
+                <button class="white-button">Learn more</button>
             </div>
             <!-- Group of block and login/register -->
             <div id="login-block" class="flex-center">
@@ -167,8 +169,8 @@
                         <p>Hi, User <br>
                             let's get started</p>
                     </div>
-                    <button id="login-button" class="no-border round-border">Join Now</button>
-                    <button id="register-button" class="no-border round-border">Log In</button>
+                    <button id="login-button" class="blue-button">Join Now</button>
+                    <button id="register-button" class="white-button">Log In</button>
                 </div>
                 <div class="block flex color-f38332 round-border">
                     <p>Get US $10 off<br>with a new<br>supplier</p>
@@ -182,8 +184,10 @@
         <!-- Sales and offers section -->
         <section id="deals-offers" class="round-border flex color-ffffff">
             <div id="countdown" class="leftside">
-                <h2>Deals and offers</h2>
-                <p>Hygiene equipments</p>
+                <div>
+                    <h3>Deals and offers</h3>
+                    <p>Hygiene equipments</p>
+                </div>
                 <div id="timer" class="flex">
                     <span>
                         <p id="days">04</p>
@@ -206,129 +210,135 @@
             <div class="rightside">
                 <div class="dealsitem">
                     <img src="images/gadgets/9.jpg" alt="Smart watch image">
-                    <h3>Smart Watch</h3>
+                    <h4>Smart Watch</h4>
                     <p>-25%</p>
                 </div>
                 <div class="dealsitem">
                     <img src="images/gadgets/5.jpg" alt="Laptop image">
-                    <h3>Laptop</h3>
+                    <h4>Laptop</h4>
                     <p>-15%</p>
                 </div>
                 <div class="dealsitem">
                     <img src="images/gadgets/1.jpg" alt="Camera image">
-                    <h3>GoPro Camera</h3>
+                    <h4>GoPro Camera</h4>
                     <p>-40%</p>
                 </div>
                 <div class="dealsitem">
                     <img src="images/gadgets/2.jpg" alt="Headphone image">
-                    <h3>Headphones</h3>
+                    <h4>Headphones</h4>
                     <p>-25%</p>
                 </div>
                 <div class="dealsitem">
                     <img src="images/gadgets/7.jpg" alt="Mobile Phone image">
-                    <h3>Mobile Phones</h3>
+                    <h4>Mobile Phones</h4>
                     <p>-25%</p>
                 </div>
             </div>
         </section>
 
         <!-- Block items group  -->
-        <section id="home-decor" class="items-group flex color-ffffff">
+        <section id="home-decor" class="items-group flex">
             <div class="leftside">
-                <h2>Home and outdoor</h2>
-                <button class="source-now-button">Source now</button>
+                <h3>Home and outdoor</h3>
+                <button class="white-button">Source now</button>
             </div>
-            <div class="rightside flex-center">
+            <div class="rightside flex">
                 <div class="items">
+                    <img src="images/home-decor/2.jpg" alt="Office chair image">
                     <h4>Office chairs</h4>
                     <p>From<br>USD 19</p>
-                    <img src="images/home-decor/2.jpg" alt="Office chair image">
                 </div>
                 <div class="items">
+                    <img src="images/home-decor/1.jpg" alt="Sofa chair image">
                     <h4>Sofa & chair</h4>
                     <p>From<br>USD 19</p>
-                    <img src="images/home-decor/1.jpg" alt="Sofa chair image">
                 </div>
                 <div class="items">
+                    <img src="images/home-decor/5.jpg" alt="Kitchen dishes image">
                     <h4>Kitchen dishes</h4>
                     <p>From<br>USD 19</p>
-                    <img src="images/home-decor/5.jpg" alt="Kitchen dishes image">
                 </div>
                 <div class="items">
+                    <img src="images/home-decor/3.jpg" alt="Decoration pot image">
                     <h4>Decoration pot</h4>
                     <p>From<br>USD 19</p>
-                    <img src="images/home-decor/3.jpg" alt="Decoration pot image">
                 </div>
                 <div class="items">
+                    <img src="images/home-decor/9.jpg" alt="Kitchen mixer image">
                     <h4>Kitchen mixer</h4>
                     <p>From<br>USD 100</p>
-                    <img src="images/home-decor/9.jpg" alt="Kitchen mixer image">
                 </div>
                 <div class="items">
+                    <img src="images/home-decor/8.jpg" alt="Kitchen blender image">
                     <h4>Kitchen blender</h4>
                     <p>From<br>USD 39</p>
-                    <img src="images/home-decor/8.jpg" alt="Kitchen blender image">
                 </div>
                 <div class="items">
+                    <img src="images/home-decor/10.jpg" alt="Washing machine image">
                     <h4>Washing machine</h4>
                     <p>From<br>USD 200</p>
-                    <img src="images/home-decor/10.jpg" alt="Washing machine image">
                 </div>
                 <div class="items">
+                    <img src="images/home-decor/6.jpg" alt="Table lamp image">
                     <h4>Table lamp</h4>
                     <p>From<br>USD 50</p>
-                    <img src="images/home-decor/6.jpg" alt="Table lamp image">
                 </div>
+            </div>
+            <div class="source-now">
+                <a href="">Source Now <img src="images/arrow.png" alt="Arrow image"></a>
             </div>
         </section>
 
         <!-- Block items group  -->
-        <section id="electronics" class="items-group flex color-ffffff">
+        <section id="electronics" class="items-group flex">
             <div class="leftside">
-                <h2>Consumer electronics and gadgets</h2>
-                <button class="source-now-button">Source now</button>
+                <h3>Consumer electronics and gadgets</h3>
+                <button class="white-button">Source now</button>
             </div>
-            <div class="rightside flex-center">
+            <div class="rightside flex">
                 <div class="items">
+                    <img src="images/gadgets/9.jpg" alt="Smart watch image">
                     <h4>Smart watches</h4>
                     <p>From<br>USD 19</p>
-                    <img src="images/gadgets/9.jpg" alt="Smart watch image">
                 </div>
                 <div class="items">
+                    <img src="images/gadgets/1.jpg" alt="Camera image">
                     <h4>Camera</h4>
                     <p>From<br>USD 38</p>
-                    <img src="images/gadgets/1.jpg" alt="Camera image">
                 </div>
                 <div class="items">
+                    <img src="images/gadgets/2.jpg" alt="Headphone image">
                     <h4>Headphone</h4>
                     <p>From<br>USD 15</p>
-                    <img src="images/gadgets/2.jpg" alt="Headphone image">
                 </div>
                 <div class="items">
+                    <img src="images/gadgets/4.jpg" alt="Electric kettle image">
                     <h4>Electric kettle</h4>
                     <p>From<br>USD 25</p>
-                    <img src="images/gadgets/4.jpg" alt="Electric kettle image">
                 </div>
                 <div class="items">
+                    <img src="images/gadgets/5.jpg" alt="Laptop image">
                     <h4>Laptop</h4>
                     <p>From<br>USD 100</p>
-                    <img src="images/gadgets/5.jpg" alt="Laptop image">
                 </div>
                 <div class="items">
+                    <img src="images/gadgets/6.jpg" alt="Mobile phone image">
                     <h4>Mobile phone</h4>
                     <p>From<br>USD 150</p>
-                    <img src="images/gadgets/6.jpg" alt="Mobile phone image">
                 </div>
                 <div class="items">
+                    <img src="images/gadgets/10.jpg" alt="Tablet image">
                     <h4>Tablet</h4>
                     <p>From<br>USD 100</p>
-                    <img src="images/gadgets/10.jpg" alt="Tablet image">
                 </div>
                 <div class="items">
+                    <img src="images/gadgets/8.jpg" alt="Iphone image">
                     <h4>Iphone</h4>
                     <p>From<br>USD 200</p>
-                    <img src="images/gadgets/8.jpg" alt="Iphone image">
                 </div>
+            </div>
+            <div class="source-now">
+                <a href="">Source Now <img src="images/arrow.png" alt="Arrow image"></a>
             </div>
         </section>
 
@@ -338,9 +348,10 @@
                 <p>An easy way to send requests to all suppliers</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est ad quia quis voluptas omnis expedita
                     dolores voluptates.</p>
+                <button class="blue-button">Send inquiry</button>
             </div>
             <div id="inquiry-form">
-                <form class="color-ffffff">
+                <form>
                     <p>Send quote to suppliers</p>
                     <div class="form-control">
                         <input id="item-name" type="text" placeholder="What item you need?">
@@ -523,7 +534,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
     <!-- Newsletter subscription section -->
     <div id="newsletter">
@@ -596,7 +607,7 @@
                 &#174 2023 Copyright
             </div>
             <div id="language">
-                <Select id="language" class="no-border">
+                <Select id="" class="no-border">
                     <option val="us" selected>English (US)</option>
                     <option val="uk">English (UK)</option>
                     <option val="canada">English (CAN) </option>
