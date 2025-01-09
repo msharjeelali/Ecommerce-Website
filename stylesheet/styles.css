@@ -39,6 +39,11 @@ body {
   background-color: var(--back-color);
 }
 
+a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
 /* General purpose classes */
 
 .flex {
@@ -122,15 +127,66 @@ hr {
   padding-bottom: 15px;
 }
 
+.logo-img {
+  width: 10vw;
+  min-width: 100px;
+  border: none;
+}
+
 .menu-img {
   margin-right: 10px;
   background-color: var(--white);
   border: none;
 }
 
-.logo-img {
-  width: 10vw;
-  min-width: 100px;
+/* Side menu bar */
+
+.side-menu {
+  background-color: var(--white);
+  width: 80%;
+  max-width: 280px;
+  height: 100vh;
+  position: absolute;
+  position: fixed;
+  top: 0px;
+  left: -280px;
+  z-index: 1;
+  transition: left 0.5s linear;
+}
+
+.side-menu > div {
+  background-color: #979797;
+  padding: 25px;
+}
+
+.side-menu > div > div {
+  margin-top: 10px;
+}
+
+.side-menu > div > p {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+}
+
+.side-menu > a {
+  display: block;
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.side-menu > a > img {
+  margin-right: 15px;
+}
+
+.side-menu > a:hover {
+  background-color: var(--back-color);
+}
+
+.side-menu > a:active {
+  color: var(--blue);
 }
 
 .fa-icons {
@@ -336,7 +392,7 @@ hr {
   #second-icons,
   #first-nav-items,
   #nav-payment-shipment,
-  hr {
+  nav hr {
     display: none;
   }
 
@@ -372,7 +428,7 @@ hr {
   #second-icons,
   #first-nav-items,
   #nav-payment-shipment,
-  hr {
+  nav hr {
     display: none;
   }
 
@@ -406,7 +462,7 @@ hr {
 }
 
 @media screen and (min-width: 1025px) {
-  #nav-logo > #menu-img,
+  #nav-logo > .menu-img,
   #first-icons,
   #search-box-second,
   #second-nav-items {

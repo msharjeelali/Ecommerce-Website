@@ -1,0 +1,142 @@
+/* Style sheet contain styling for category page. */
+
+main {
+  display: flex;
+}
+
+.navigation-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  a {
+    font-size: 1rem;
+    color: #8b96af;
+    margin: 0px 5px;
+  }
+}
+
+.sidebar {
+  z-index: 1;
+  transition: left 0.5s linear;
+  p {
+    margin: 5px 10px;
+    font-size: 24px;
+    text-align: end;
+  }
+}
+
+.sidebar-dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  border-top: 1px solid var(--light-grey);
+  position: relative;
+  h2 {
+    color: #1c1c1c;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 5px;
+  }
+  h2:hover {
+    cursor: pointer;
+  }
+}
+
+.sidebar-dropdown > .filters {
+  display: flex;
+  flex-direction: column;
+  height: 0px;
+  overflow: hidden;
+  transition: height 2s linear;
+  color: #505050;
+  a {
+    font-size: 1rem;
+    padding: 10px 5px;
+  }
+  a:nth-last-child(1) {
+    color: var(--blue);
+  }
+  a:hover {
+    background-color: #e5f1fff7;
+  }
+  label {
+    margin: 10px 5px;
+  }
+  input {
+    accent-color: var(--blue);
+  }
+}
+
+.filters > label > input {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.sidebar-dropdown > img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: -1;
+  width: 20px;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-width: 280px;
+  select {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: white;
+  }
+  button {
+    padding: 10px;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+.item-view {
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 425px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: white;
+    height: 100vh;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: white;
+    height: 100vh;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar > p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .sidebar > p {
+    display: none;
+  }
+}

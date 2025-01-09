@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Category Page</title>
+    <link href="stylesheet/styles.css" rel="stylesheet">
+    <link href="stylesheet/singlecategory.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header which contain navbar -->
+    <header>
+        <!-- Navbar container div -->
+        <nav class="nav-container">
+            <!-- Upper part of navbar -->
+            <div id="upper-nav" class="flex-between padding">
+                <!-- Brand logo in navbar -->
+                <div id="nav-logo" class="flex-center">
+                    <!-- Menu button for small screen sizes -->
+                    <img src="images/menu.png" alt="Menu Icon" class="menu-img" onclick="showSideMenu();">
+                    <a href="index.html"><img src="images/logo-colored.svg" alt="Colored Logo" class="logo-img"></a>
+                </div>
+                <!-- Navbar icons for small screen size -->
+                <div id="first-icons" class="flex-center">
+                    <div class="fa-icons">
+                        <a href="#"><img src="images/shopping_cart.png" alt="Profile Icon"></a>
+                    </div>
+                    <div class="fa-icons">
+                        <a href="#"><img src="images/person.png" alt="Messages Icon"></a>
+                    </div>
+                </div>
+                <!-- Navbar first search box for bigger screen sizes -->
+                <div id="first-search-box" class="flex-center search-box">
+                    <search class="flex">
+                        <input type="text" name="search" id="search-box" class="blue-border" placeholder="Search">
+                    </search>
+                    <select id="category" class="blue-border">
+                        <option selected>All category</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                        <option>Option 5</option>
+                    </select>
+                    <button class="blue-button">Search</button>
+                </div>
+                <!-- Navbar icon for larger screen size -->
+                <div id="second-icons" class="flex-center">
+                    <div class="fa-icons text-align">
+                        <a href="#" class="no-decoration"><img src="images/profile.png" alt="Profile Icon">
+                            <p>Profile</p>
+                        </a>
+                    </div>
+                    <div class="fa-icons text-align">
+                        <a href="#" class="no-decoration"><img src="images/message.png" alt="Messages Icon">
+                            <p>Messages</p>
+                        </a>
+                    </div>
+                    <div class="fa-icons text-align">
+                        <a href="#" class="no-decoration"><img src="images/order.png" alt="Heart Icon">
+                            <p>Order</p>
+                        </a>
+                    </div>
+                    <div class="fa-icons  text-align">
+                        <a href="#" class="no-decoration">
+                            <img src="images/cart.png" alt="Cart Icon">
+                            <p>My Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navbar second search box for small screen size -->
+            </div>
+            <!-- Search box for small screen size -->
+            <div id="search-box-second" class="flex-center padding">
+                <search class="flex">
+                    <img src="images/search.png" alt="Search Icon">
+                    <input type="text" name="search" id="search-box" class="no-border" placeholder="Search">
+                </search>
+            </div>
+            <hr>
+            <!-- Lower part of navbar -->
+            <div id="lower-nav" class="flex-between padding">
+                <!-- Nav items list for large screens -->
+                <div id="first-nav-items" class="nav-list flex-center">
+                    <img src="images/menu.png" alt="Menu Icon" class="menu-img">
+                    <a href="#">All category</a>
+                    <a href="#">Hot offers</a>
+                    <a href="#">Gift boxes</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Menu item</a>
+                    <select id="help" class="no-border">
+                        <option selected>Help</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                        <option>Option 5</option>
+                    </select>
+                </div>
+                <!-- Nav payment and shipment options -->
+                <div id="nav-payment-shipment" class="flex-center">
+                    <div id="payment">
+                        <Select id="langpay" class="no-border">
+                            <option val="pak" selected>Pakistan, PKR</option>
+                            <option val="usd">English, USD</option>
+                            <option val="euro">English, EUR</option>
+                            <option val="pound">English, GBP</option>
+                            <option val="canidian">English, CAD</option>
+                            <option val="australian">English, AUD</option>
+                        </Select>
+                    </div>
+                    <div id="shipment" class="flex-center">
+                        <p>Ship to</p>
+                        <Select id="shipto" class="no-border">
+                            <option val="pkr" selected>PAK</option>
+                            <option val="us">US</option>
+                            <option val="uk">UK</option>
+                            <option val="russia">RSA</option>
+                            <option val="france">FRN</option>
+                        </Select>
+                    </div>
+                </div>
+                <!-- Nav items list for small screens-->
+                <div id="second-nav-items" class="flex nav-list">
+                    <a href="#">All category</a>
+                    <a href="#">Gadget</a>
+                    <a href="#">Clothes</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Fitness</a>
+                    <a href="#">Health</a>
+                    <a href="#">Beauty</a>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <div class="side-menu">
+            <div>
+                <img src="images/avatar.png" alt="Profile image">
+                <div>
+                    <a href="#">Sign in</a> |
+                    <a href="#">Register</a>
+                </div>
+                <p onclick="hideSideMenu();">x</p>
+            </div>
+            <a href="index.html"><img src="images/navbar/home.png">Home</a>
+            <a href="#"><img src="images/navbar/list.png">Categories</a>
+            <a href="#"><img src="images/navbar/favorite.png">Favorites</a>
+            <a href="#"><img src="images/navbar/inventory.png">My Orders</a>
+            <hr>
+            <a href="#"><img src="images/navbar/language.png">English | USD</a>
+            <a href="#"><img src="images/navbar/headset.png">Contact Us</a>
+            <a href="#"><img src="images/navbar/business.png">About Us</a>
+            <hr>
+            <a href="">User agreement</a>
+            <a href="">Partnership</a>
+            <a href="">Privacy Policy</a>
+        </div>
+    </header>
+
+    <div class="navigation-list padding">
+        <a href="index.html">Home</a> > <a href="category.html">Clothings</a> > <a href="#">Men wears</a> >
+        <a href="#">Summer clothing</a>
+    </div>
+
+    <!-- Main content of category page -->
+    <main class="padding">
+        <div class="sidebar">
+            <p onclick="hideFilters();">x</p>
+            <div id="category" class="sidebar-dropdown">
+                <h2 onclick="toggleSideBarDropDown(this);">Category</h2>
+                <div class="filters">
+                    <a href="category.html">Mobile accessory</a>
+                    <a href="category.html">Electronics</a>
+                    <a href="category.html">Smartphones</a>
+                    <a href="category.html">Modern tech</a>
+                    <a href="#">See all</a>
+                </div>
+                <img src="images/expand_more.png" alt="Expand more image">
+            </div>
+            <div id="brand" class="sidebar-dropdown">
+                <h2 onclick="toggleSideBarDropDown(this);">Brand</h2>
+                <div class="filters">
+                    <label for="samsung"><input type="checkbox" id="samsung" value="Samsung">Samsung</label>
+                    <label for="apple"><input type="checkbox" id="apple" value="Apple">Apple</label>
+                    <label for="lenovo"><input type="checkbox" id="lenovo" value="Lenovo">Lenovo</label>
+                    <label for="huawei"><input type="checkbox" id="huawei" value="Huawei">Huawei</label>
+                    <a href="#">See all</a>
+                </div>
+                <img src="images/expand_more.png" alt="Expand more image">
+            </div>
+            <div id="features" class="sidebar-dropdown">
+                <h2 onclick="toggleSideBarDropDown(this);">Features</h2>
+                <div class="filters">
+                    <label for="metallic"><input type="checkbox" id="metallic" value="Matallic">Metallic</label>
+                    <label for="plastic-cover"><input type="checkbox" id="plastic-cover" value="Plastic Cover">Plastic
+                        Cover</label>
+                    <label for="RAM-8GB"><input type="checkbox" id="RAM-8GB" value="8GB RAM">8GB RAM</label>
+                    <label for="super-power"><input type="checkbox" id="super-power" value="Super Power">Super
+                        Power</label>
+                    <a href="#">See all</a>
+                </div>
+                <img src="images/expand_more.png" alt="Expand more image">
+            </div>
+            <div id="price" class="sidebar-dropdown">
+                <h2 onclick="toggleSideBarDropDown(this);">Price Range</h2>
+                <div class="filters">
+                    <label for="less-30"><input type="radio" id="less-30" name="price-range"
+                            value="Less than 29,999">Price
+                        &lt
+                        29,999</label>
+                    <label for="btw-30-40"><input type="radio" id="btw-30-40" name="price-range"
+                            value="30,000 - 39,999">30,000 -
+                        39,999</label>
+                    <label for="btw-40-50"><input type="radio" id="btw-40-50" name="price-range"
+                            value="40,000 - 49,999">40,000 -
+                        49,999</label>
+                    <label for="greater-50"><input type="radio" id="greater-50" name="price-range"
+                            value="Greater than 50,000">Price &gt
+                        50,000</label>
+                </div>
+                <img src="images/expand_more.png" alt="Expand more image">
+            </div>
+        </div>
+        <div class="items-list">
+            <div id="controls">
+                <select name="sort-items" id="sort-dropdown" class="no-border">
+                    <option selected>Newest</option>
+                    <option>Oldest</option>
+                    <option>Cheapest</option>
+                    <option>Expensive</option>
+                </select>
+                <button id="filter-button" class="white-button" onclick="showFilters();">Filter <img
+                        src="images/filter.png"></button>
+                <div class="item-view">
+                    <img src="images/gridview.png" alt="Grid view button">
+                    <img src="images/listview.png" alt="List view button">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Container for upper part of footer -->
+        <div class="upper-footer flex-center padding">
+            <!-- Container for brand logo and social links -->
+            <div id="social" class="">
+                <a href=" index.html">
+                    <img src="images/logo-colored.svg" alt="Brand Logo">
+                </a>
+                <p>Best information about the company goes here but now lorem ipsum is</p>
+                <div id="social-links">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook Link"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter Link"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram Link"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="Linkedin Link"></a>
+                    <a href="#"><img src="images/youtube.png" alt="Youtube Link"></a>
+                </div>
+            </div>
+            <!-- Container for navigation links -->
+            <div id="footer-nav-links" class="flex-center">
+                <div class="col">
+                    <h5>About</h5>
+                    <a href="#">About Us</a>
+                    <a href="#">Find Store</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Blogs</a>
+                </div>
+                <div class="col">
+                    <h5>Patnership</h5>
+                    <a href="#">About Us</a>
+                    <a href="#">Find Store</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Blogs</a>
+                </div>
+                <div class="col">
+                    <h5>Information</h5>
+                    <a href="#">Help Center</a>
+                    <a href="#">Money Refund</a>
+                    <a href="#">Shippings</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="col">
+                    <h5>For Users</h5>
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <a href="#">Settings</a>
+                    <a href="#">My Orders</a>
+                </div>
+            </div>
+            <!-- Container for application download links -->
+            <div id="app-link" class="">
+                <h5>Get app</h5>
+                <a href="#"><img src="images/appstore.png" src="App store link"></a>
+                <a href="#"><img src="images/playstore.png" src="Play store link"></a>
+            </div>
+        </div>
+        <!-- Conatiner for lower part of footer -->
+        <div class="lower-footer flex-center padding">
+            <div id="copyright">
+                &#174 2023 Copyright
+            </div>
+            <div id="language">
+                <Select id="" class="no-border">
+                    <option val="us" selected>English (US)</option>
+                    <option val="uk">English (UK)</option>
+                    <option val="canada">English (CAN) </option>
+                    <option val="australia">English (AUS)</option>
+                </Select>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="javascript/basic.js"></script>
+
+</html>
