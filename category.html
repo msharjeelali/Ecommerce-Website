@@ -205,36 +205,185 @@
             <div id="price" class="sidebar-dropdown">
                 <h2 onclick="toggleSideBarDropDown(this);">Price Range</h2>
                 <div class="filters">
-                    <label for="less-30"><input type="radio" id="less-30" name="price-range"
-                            value="Less than 29,999">Price
-                        &lt
-                        29,999</label>
-                    <label for="btw-30-40"><input type="radio" id="btw-30-40" name="price-range"
-                            value="30,000 - 39,999">30,000 -
-                        39,999</label>
-                    <label for="btw-40-50"><input type="radio" id="btw-40-50" name="price-range"
-                            value="40,000 - 49,999">40,000 -
-                        49,999</label>
-                    <label for="greater-50"><input type="radio" id="greater-50" name="price-range"
-                            value="Greater than 50,000">Price &gt
-                        50,000</label>
+                </div>
+                <img src="images/expand_more.png" alt="Expand more image">
+            </div>
+            <div id="condition" class="sidebar-dropdown">
+                <h2 onclick="toggleSideBarDropDown(this);">Features</h2>
+                <div class="filters">
+                    <label for="any"><input type="radio" id="any" name="condition-radio" value="Any">Any</label>
+                    <label for="refurbished"><input type="radio" id="refurbished" name="condition-radio"
+                            value="Refurbished">Refurbished</label>
+                    <label for="brand-new"><input type="radio" id="brand-new" name="condition-radio"
+                            value="Brand New">Brand New</label>
+                    <label for="old-items"><input type="radio" id="old-items" name="condition-radio"
+                            value="Old Items">Old Items</label>
+                </div>
+                <img src="images/expand_more.png" alt="Expand more image">
+            </div>
+            <div id="rating" class="sidebar-dropdown">
+                <h2 onclick="toggleSideBarDropDown(this);">Ratings</h2>
+                <div class="filters">
+                    <label for="five-star"><input type="checkbox" id="five-star" value="5 Stars"><img
+                            src="images/5-star.png" alt="5 star rating"></label>
+                    <label for="four-star"><input type="checkbox" id="four-star" value="4 Stars"><img
+                            src="images/4-star.png" alt="4 star rating"></label>
+                    <label for="three-star"><input type="checkbox" id="three-star" value="3 Stars"><img
+                            src="images/3-star.png" alt="3 star rating"></label>
+                    <label for="two-star"><input type="checkbox" id="two-star" value="2 Stars"><img
+                            src="images/2-star.png" alt="2 star rating"></label>
                 </div>
                 <img src="images/expand_more.png" alt="Expand more image">
             </div>
         </div>
         <div class="items-list">
             <div id="controls">
-                <select name="sort-items" id="sort-dropdown" class="no-border">
-                    <option selected>Newest</option>
-                    <option>Oldest</option>
-                    <option>Cheapest</option>
-                    <option>Expensive</option>
-                </select>
-                <button id="filter-button" class="white-button" onclick="showFilters();">Filter <img
-                        src="images/filter.png"></button>
-                <div class="item-view">
-                    <img src="images/gridview.png" alt="Grid view button">
-                    <img src="images/listview.png" alt="List view button">
+                <p>9,999 items in <strong>Mobile accessory</strong></p>
+                <div>
+                    <select name="sort-items" id="sort-dropdown" class="no-border">
+                        <option selected>Newest</option>
+                        <option>Oldest</option>
+                        <option>Cheapest</option>
+                        <option>Expensive</option>
+                    </select>
+                    <button id="filter-button" class="white-button" onclick="showFilters();">Filter <img
+                            src="images/filter.png">
+                    </button>
+                    <label for="verified-items">
+                        <input type="checkbox" id="verified-items"> Verified Only
+                    </label>
+                    <select name="featured" id="feature-dropdown" class="no-border">
+                        <option selected>Featured</option>
+                        <option>Oldest</option>
+                        <option>Cheapest</option>
+                        <option>Expensive</option>
+                    </select>
+                    <div class="item-view">
+                        <img src="images/gridview.png" alt="Grid view button">
+                        <img src="images/listview.png" alt="List view button">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="item-detail gridview">
+                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                    <div class="detail">
+                        <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
+                        <p class="price">$998.00</p>
+                        <div> <img src="images/4-star.png" alt="4 star rating image">
+                            <div class="dot"></div>
+                            <p class="order-no">154 orders</p>
+                            <div class="dot"></div>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto est
+                            cumque enim doloremque tenetur</p>
+                        <a href="#">View details</a>
+                        <p class="title">GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                    <div class="favourite">
+                        <img src="images/favorite.png" alt="Favourite icon">
+                    </div>
+                </div>
+                <div class="item-detail gridview">
+                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                    <div class="detail">
+                        <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
+                        <p class="price">$998.00</p>
+                        <div> <img src="images/4-star.png" alt="4 star rating image">
+                            <div class="dot"></div>
+                            <p class="order-no">154 orders</p>
+                            <div class="dot"></div>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto est
+                            cumque enim doloremque tenetur</p>
+                        <a href="#">View details</a>
+                        <p class="title">GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                    <div class="favourite">
+                        <img src="images/favorite.png" alt="Favourite icon">
+                    </div>
+                </div>
+                <div class="item-detail gridview">
+                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                    <div class="detail">
+                        <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
+                        <p class="price">$998.00</p>
+                        <div> <img src="images/4-star.png" alt="4 star rating image">
+                            <div class="dot"></div>
+                            <p class="order-no">154 orders</p>
+                            <div class="dot"></div>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto est
+                            cumque enim doloremque tenetur</p>
+                        <a href="#">View details</a>
+                        <p class="title">GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                    <div class="favourite">
+                        <img src="images/favorite.png" alt="Favourite icon">
+                    </div>
+                </div>
+                <div class="item-detail gridview">
+                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                    <div class="detail">
+                        <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
+                        <p class="price">$998.00</p>
+                        <div> <img src="images/4-star.png" alt="4 star rating image">
+                            <div class="dot"></div>
+                            <p class="order-no">154 orders</p>
+                            <div class="dot"></div>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto est
+                            cumque enim doloremque tenetur</p>
+                        <a href="#">View details</a>
+                        <p class="title">GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                    <div class="favourite">
+                        <img src="images/favorite.png" alt="Favourite icon">
+                    </div>
+                </div>
+                <div class="item-detail gridview">
+                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                    <div class="detail">
+                        <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
+                        <p class="price">$998.00</p>
+                        <div> <img src="images/4-star.png" alt="4 star rating image">
+                            <div class="dot"></div>
+                            <p class="order-no">154 orders</p>
+                            <div class="dot"></div>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto est
+                            cumque enim doloremque tenetur</p>
+                        <a href="#">View details</a>
+                        <p class="title">GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                    <div class="favourite">
+                        <img src="images/favorite.png" alt="Favourite icon">
+                    </div>
+                </div>
+                <div class="item-detail gridview">
+                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                    <div class="detail">
+                        <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
+                        <p class="price">$998.00</p>
+                        <div> <img src="images/4-star.png" alt="4 star rating image">
+                            <div class="dot"></div>
+                            <p class="order-no">154 orders</p>
+                            <div class="dot"></div>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto est
+                            cumque enim doloremque tenetur</p>
+                        <a href="#">View details</a>
+                        <p class="title">GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                    <div class="favourite">
+                        <img src="images/favorite.png" alt="Favourite icon">
+                    </div>
                 </div>
             </div>
         </div>
