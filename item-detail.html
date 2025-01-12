@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="stylesheet/styles.css" rel="stylesheet">
+    <link href="stylesheet/item-detail.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="nav-history">
+        <a href="index.html">Home</a> >
+        <a href="category.html">Clothing</a> >
+        <a href="category.html">Men's wear</a> >
+        <a href="item-detail.html">Summer clothing</a>
+    </nav>
+    <main>
+        <!-- Main content section of page -->
+        <section id="content-main">
+            <!-- Gallery of product -->
+            <div id="gallery">
+                <!-- Main large image of product -->
+                <div id="image-main">
+                    <img src="images/item-images/image-1.png" alt="Shirt image">
+                </div>
+                <!-- List of differnt images available for product -->
+                <div id="image-list">
+                    <img src="images/item-images/image-1.png" alt="Shirt image" class="image-active"
+                        onclick="showMainImage(this);">
+                    <img src="images/item-images/image-2.png" alt="Shirt image" onclick="showMainImage(this);">
+                    <img src="images/item-images/image-3.png" alt="Shirt image" onclick="showMainImage(this);">
+                    <img src="images/item-images/image-4.png" alt="Shirt image" onclick="showMainImage(this);">
+                    <img src="images/item-images/image-5.png" alt="Shirt image" onclick="showMainImage(this);">
+                    <img src="images/item-images/image-6.png" alt="Shirt image" onclick="showMainImage(this);">
+                </div>
+            </div>
+            <!-- Information section of product -->
+            <div id="information">
+                <p class="availability">In stock</p>
+                <h1 class="item-title">Mens Long Sleeve T-Shirt Cotton Base Layer Slim Muscle</h1>
+                <span class="rating-review">
+                    <img class="rating" src="images/4-star.png" alt="Product rating image">
+                    <p class="rating">9.3</p>
+                    <div class="dot"></div>
+                    <img src="images/review.png" alt="Review image">
+                    <p class="review">32 reviews</p>
+                    <div class="dot"></div>
+                    <img src="images/basket.png" alt="Basket image">
+                    <p class="sold">154 sold</p>
+                </span>
+                <span class="prices">
+                    <div class="price-for-small">
+                        <p>$98.00</p>
+                        <p>50-100 pcs</p>
+                    </div>
+                    <div class="price-for-medium">
+                        <p>$90.00</p>
+                        <p>100-700 pcs</p>
+                    </div>
+                    <div class="price-for-large">
+                        <p>$78.00</p>
+                        <p>700+ pcs</p>
+                    </div>
+                </span>
+                <span class="detail">
+                    <p class="detail-title">Price:</p>
+                    <p class="detail-description">Negotiable</p>
+                    <hr>
+                    <p class="detail-title">Type:</p>
+                    <p class="detail-description">Classical shoes</p>
+                    <p class="detail-title">Material:</p>
+                    <p class="detail-description">Plastic material</p>
+                    <p class="detail-title">Design:</p>
+                    <p class="detail-description">Modern nice</p>
+                    <hr>
+                    <p class="detail-title">Customization:</p>
+                    <p class="detail-description">Customized logo and design custom packages</p>
+                    <p class="detail-title">Protection:</p>
+                    <p class="detail-description">Refund policy</p>
+                    <p class="detail-title">Warranty:</p>
+                    <p class="detail-description">2 years full warranty</p>
+                    <hr>
+                </span>
+            </div>
+            <!-- Seller Information section -->
+            <div id="seller-info">
+                <div class="information">
+                    <div class="initial">R</div>
+                    <h2 class="seller-name">Supplier<br>Guanjoi Trading LLC</h2>
+                    <hr>
+                    <img class="seller-info-icon" src="images/flags/germany.png" alt="Germany flag">
+                    <p class="seller-info-description">Germany, Berlin</p>
+                    <img class="seller-info-icon" src="images/verified_user.png" alt="Verified user icon">
+                    <p class="seller-info-description">Verified Seller</p>
+                    <img class="seller-info-icon" src="images/language.png" alt="Language icon">
+                    <p class="seller-info-description">Worldwide shipping</p>
+                    <button class="blue-button">Send inquiry</button>
+                    <button class="white-button">Seller's profile</button>
+                </div>
+                <div class="save-later">
+                    <img src="images/favorite_border.png" alt="Favourite icon">
+                    <p>Save for later</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="javascript/basic.js"></script>
+</body>
+
+</html>

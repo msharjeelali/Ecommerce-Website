@@ -1,0 +1,244 @@
+:root {
+  --main-padding: 10vw;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+html {
+  font-size: 16x;
+}
+
+/* Navigation list history */
+#nav-history {
+  color: #8b96af;
+  background-color: #ffffff;
+  font-size: 1rem;
+  padding: 20px var(--main-padding);
+  a {
+    color: #8b96af;
+    text-decoration: none;
+    margin-right: 5px;
+  }
+}
+
+main {
+  background-color: #f8f9fa;
+  padding: 0 var(--main-padding);
+}
+
+/* Main content section of item */
+#content-main {
+  width: 100vw - var(--main-padding);
+  background-color: #ffffff;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+#gallery {
+  width: 32%;
+  #image-main {
+    img {
+      width: 100%;
+      aspect-ratio: 1;
+      border: 1px solid #dee2e7;
+      border-radius: 5px;
+    }
+  }
+  #image-list {
+    margin-top: 20px;
+    img {
+      width: 15%;
+      aspect-ratio: 1;
+      border: 1px solid #dee2e7;
+      border-radius: 5px;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+    .image-active {
+      border: 1px solid #000000;
+    }
+  }
+}
+
+#information {
+  width: 36%;
+  .availability {
+    color: #00b517;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .item-title {
+    color: #1c1c1c;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .rating-review {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    * {
+      margin-right: 7px;
+    }
+    .rating {
+      color: #ff9017;
+    }
+    .review,
+    .sold {
+      color: #787a80;
+    }
+    .dot {
+      background-color: #dbdbdb;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+    }
+  }
+  .prices {
+    background-color: #fff0df;
+    padding: 15px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .price-for-small {
+      width: 33%;
+      border-right: 1px solid #bdc1c8;
+      padding-left: 5px;
+      p:nth-child(1) {
+        color: #fa3434;
+        font-size: 1.125rem;
+      }
+      p:nth-child(2) {
+        color: #606060;
+        font-size: 0.75rem;
+      }
+    }
+    .price-for-medium {
+      width: 33%;
+      border-right: 1px solid #bdc1c8;
+      padding-left: 5px;
+      p:nth-child(1) {
+        color: #1c1c1c;
+        font-size: 1.125rem;
+      }
+      p:nth-child(2) {
+        color: #606060;
+        font-size: 0.75rem;
+      }
+    }
+    .price-for-large {
+      width: 33%;
+      padding-left: 5px;
+      p:nth-child(1) {
+        color: #1c1c1c;
+        font-size: 1.125rem;
+      }
+      p:nth-child(2) {
+        color: #606060;
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .detail {
+    display: flex;
+    flex-wrap: wrap;
+    p {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .detail-title {
+      width: 35%;
+      color: #8b96af;
+      font-size: 1rem;
+    }
+    .detail-description {
+      width: 50%;
+      color: #505050;
+      font-size: 1rem;
+    }
+    hr {
+      border: 1px solid #e0e0e0;
+      width: 100%;
+    }
+  }
+}
+
+#seller-info {
+  width: 23%;
+  .information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    .initial {
+      font-size: 1.75rem;
+      background-color: #c6f3f1;
+      color: #4ca7a7;
+      width: 20%;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .seller-name {
+      width: 80%;
+      font-size: 1rem;
+      color: #1c1c1c;
+      padding-left: 10px;
+    }
+    hr {
+      border: 1px solid #e0e0e0;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .seller-info-icon {
+      width: 10%;
+      aspect-ratio: 1;
+      margin-bottom: 10px;
+    }
+    .seller-info-description {
+      font-size: 1rem;
+      color: #8b96af;
+      width: 85%;
+      margin-bottom: 10px;
+    }
+    .blue-button {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .white-button {
+      width: 100%;
+      border: 1px solid #dee2e7;
+      color: #0d6efd;
+    }
+  }
+  .save-later {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: #0d6efd;
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+  }
+}

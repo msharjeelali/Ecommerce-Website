@@ -165,7 +165,7 @@
 
     <!-- Main content of category page -->
     <main class="padding">
-        <div class="sidebar">
+        <aside class="sidebar">
             <p onclick="hideFilters();">x</p>
             <div id="category" class="sidebar-dropdown">
                 <h2 onclick="toggleSideBarDropDown(this);">Category</h2>
@@ -235,8 +235,8 @@
                 </div>
                 <img src="images/expand_more.png" alt="Expand more image">
             </div>
-        </div>
-        <div class="items-list">
+        </aside>
+        <section class="items-list">
             <div id="controls">
                 <p>9,999 items in <strong>Mobile accessory</strong></p>
                 <div>
@@ -259,13 +259,67 @@
                         <option>Expensive</option>
                     </select>
                     <div class="item-view">
-                        <img src="images/gridview.png" alt="Grid view button">
-                        <img src="images/listview.png" alt="List view button">
+                        <img src="images/gridview.png" alt="Grid view button" onclick="showGridMode();">
+                        <img src="images/listview.png" alt="List view button" onclick="showListMode();">
                     </div>
+                </div>
+            </div>
+            <div id="active-filters">
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
+                </div>
+                <div class="item-filter">
+                    <p class="name-filter">Samsung</p>
+                    <p class="cancel-filter">X</p>
                 </div>
             </div>
             <div>
-                <div class="item-detail gridview">
+                <div class="item-detail grid-view">
                     <img src=" images/gadgets/1.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -285,8 +339,8 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail gridview">
-                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                <div class="item-detail grid-view">
+                    <img src=" images/gadgets/2.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
                         <p class="price">$998.00</p>
@@ -305,8 +359,8 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail gridview">
-                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                <div class="item-detail grid-view">
+                    <img src=" images/gadgets/3.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
                         <p class="price">$998.00</p>
@@ -325,8 +379,8 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail gridview">
-                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                <div class="item-detail grid-view">
+                    <img src=" images/gadgets/4.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
                         <p class="price">$998.00</p>
@@ -345,8 +399,8 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail gridview">
-                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                <div class="item-detail grid-view">
+                    <img src=" images/gadgets/5.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
                         <p class="price">$998.00</p>
@@ -365,8 +419,68 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail gridview">
-                    <img src=" images/gadgets/1.jpg" alt="Canon camera image">
+                <div class="item-detail grid-view">
+                    <img src=" images/gadgets/6.jpg" alt="Canon camera image">
+                    <div class="detail">
+                        <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
+                        <p class="price">$998.00</p>
+                        <div> <img src="images/4-star.png" alt="4 star rating image">
+                            <div class="dot"></div>
+                            <p class="order-no">154 orders</p>
+                            <div class="dot"></div>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto est
+                            cumque enim doloremque tenetur</p>
+                        <a href="#">View details</a>
+                        <p class="title">GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                    <div class="favourite">
+                        <img src="images/favorite.png" alt="Favourite icon">
+                    </div>
+                </div>
+                <div class="item-detail grid-view">
+                    <img src=" images/gadgets/7.jpg" alt="Canon camera image">
+                    <div class="detail">
+                        <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
+                        <p class="price">$998.00</p>
+                        <div> <img src="images/4-star.png" alt="4 star rating image">
+                            <div class="dot"></div>
+                            <p class="order-no">154 orders</p>
+                            <div class="dot"></div>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto est
+                            cumque enim doloremque tenetur</p>
+                        <a href="#">View details</a>
+                        <p class="title">GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                    <div class="favourite">
+                        <img src="images/favorite.png" alt="Favourite icon">
+                    </div>
+                </div>
+                <div class="item-detail grid-view">
+                    <img src=" images/gadgets/8.jpg" alt="Canon camera image">
+                    <div class="detail">
+                        <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
+                        <p class="price">$998.00</p>
+                        <div> <img src="images/4-star.png" alt="4 star rating image">
+                            <div class="dot"></div>
+                            <p class="order-no">154 orders</p>
+                            <div class="dot"></div>
+                            <p class="shipping">Free Shipping</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto est
+                            cumque enim doloremque tenetur</p>
+                        <a href="#">View details</a>
+                        <p class="title">GoPro HERO6 4K Action Camera - Black</p>
+                    </div>
+                    <div class="favourite">
+                        <img src="images/favorite.png" alt="Favourite icon">
+                    </div>
+                </div>
+                <div class="item-detail grid-view">
+                    <img src=" images/gadgets/9.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
                         <p class="price">$998.00</p>
@@ -386,7 +500,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->

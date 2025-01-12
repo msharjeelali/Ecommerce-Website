@@ -35,3 +35,29 @@ function hideFilters() {
   const sideBar = document.querySelector(".sidebar");
   sideBar.style.left = "-300px";
 }
+
+// This function change the item viewing mode to grid
+function showGridMode() {
+  itemList = document.querySelectorAll(".item-detail");
+  itemList.forEach((element) => {
+    element.className = "item-detail grid-view";
+  });
+}
+
+// This function change the item viewing mode to list
+function showListMode() {
+  itemList = document.querySelectorAll(".item-detail");
+  itemList.forEach((element) => {
+    element.className = "item-detail list-view";
+  });
+}
+
+// Item detail page
+
+// This function is to selec image in item detail page
+function showMainImage(obj) {
+  const mainImage = document.querySelector("#image-main img");
+  mainImage.src = obj.src;
+  document.querySelector(".image-active").className = "";
+  obj.className = "image-active";
+}
