@@ -61,3 +61,9 @@ function showMainImage(obj) {
   document.querySelector(".image-active").className = "";
   obj.className = "image-active";
 }
+
+// This function is to set current tab as actice in description section
+function activeNavTab(obj) {
+  document.querySelector(".p-active").className = "";
+  obj.className = "p-active";
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="stylesheet/styles.css" rel="stylesheet">
+    <link href="stylesheet/product-detail.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="nav-history">
+        <a href="index.html">Home</a> >
+        <a href="category.html">Clothing</a> >
+        <a href="category.html">Men's wear</a> >
+        <a href="item-detail.html">Summer clothing</a>
+    </nav>
+    <main>
+        <!-- Main content section of page -->
+        <section id="content-main">
+            <!-- Gallery of product -->
+            <div id="gallery">
+
+                <!-- Main large image of product -->
+                <div id="image-main">
+                    <img src="images/item-images/image-1.png" alt="Shirt image">
+                </div>
+                <!-- List of differnt images available for product -->
+                <div id="image-list">
+                    <img src="images/item-images/image-1.png" alt="Shirt image" class="image-active"
+                        onclick="showMainImage(this);">
+                    <img src="images/item-images/image-2.png" alt="Shirt image" onclick="showMainImage(this);">
+                    <img src="images/item-images/image-3.png" alt="Shirt image" onclick="showMainImage(this);">
+                    <img src="images/item-images/image-4.png" alt="Shirt image" onclick="showMainImage(this);">
+                    <img src="images/item-images/image-5.png" alt="Shirt image" onclick="showMainImage(this);">
+                    <img src="images/item-images/image-6.png" alt="Shirt image" onclick="showMainImage(this);">
+                </div>
+            </div>
+            <!-- Information section of product -->
+            <div id="information">
+                <p class="availability">In stock</p>
+                <h1 class="item-title">Mens Long Sleeve T-Shirt Cotton Base Layer Slim Muscle</h1>
+                <span class="rating-review">
+                    <img class="rating" src="images/4-star.png" alt="Product rating image">
+                    <p class="rating">9.3</p>
+                    <div class="dot"></div>
+                    <img src="images/review.png" alt="Review image">
+                    <p class="review">32 reviews</p>
+                    <div class="dot"></div>
+                    <img src="images/basket.png" alt="Basket image">
+                    <p class="sold">154 sold</p>
+                </span>
+                <span class="prices">
+                    <div class="price-for-small">
+                        <p>$98.00</p>
+                        <p>50-100 pcs</p>
+                    </div>
+                    <div class="price-for-medium">
+                        <p>$90.00</p>
+                        <p>100-700 pcs</p>
+                    </div>
+                    <div class="price-for-large">
+                        <p>$78.00</p>
+                        <p>700+ pcs</p>
+                    </div>
+                </span>
+                <span class="detail">
+                    <p class="detail-title">Price:</p>
+                    <p class="detail-description">Negotiable</p>
+                    <hr>
+                    <p class="detail-title">Type:</p>
+                    <p class="detail-description">Classical shoes</p>
+                    <p class="detail-title">Material:</p>
+                    <p class="detail-description">Plastic material</p>
+                    <p class="detail-title">Design:</p>
+                    <p class="detail-description">Modern nice</p>
+                    <hr>
+                    <p class="detail-title">Customization:</p>
+                    <p class="detail-description">Customized logo and design custom packages</p>
+                    <p class="detail-title">Protection:</p>
+                    <p class="detail-description">Refund policy</p>
+                    <p class="detail-title">Warranty:</p>
+                    <p class="detail-description">2 years full warranty</p>
+                    <hr>
+                </span>
+            </div>
+            <!-- Seller Information section -->
+            <div id="seller-info">
+                <div class="information">
+                    <div class="initial">R</div>
+                    <h2 class="seller-name">Supplier<br>Guanjoi Trading LLC</h2>
+                    <hr>
+                    <img class="seller-info-icon" src="images/flags/germany.png" alt="Germany flag">
+                    <p class="seller-info-description">Germany, Berlin</p>
+                    <img class="seller-info-icon" src="images/verified_user.png" alt="Verified user icon">
+                    <p class="seller-info-description">Verified Seller</p>
+                    <img class="seller-info-icon" src="images/language.png" alt="Language icon">
+                    <p class="seller-info-description">Worldwide shipping</p>
+                    <button class="blue-button">Send inquiry</button>
+                    <button class="white-button">Seller's profile</button>
+                </div>
+                <div class="save-later">
+                    <img src="images/favorite_border.png" alt="Favourite icon">
+                    <p>Save for later</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail section of product-->
+        <section id="content-detail">
+            <!-- Navigation bar for product's different details -->
+            <nav>
+                <p class="p-active" onclick="activeNavTab(this);">Description</p>
+                <p onclick="activeNavTab(this);">Reviews</p>
+                <p onclick="activeNavTab(this);">Shipping</p>
+                <p onclick="activeNavTab(this);">About seller</p>
+            </nav>
+            <hr>
+            <!-- Detailed description of product -->
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur et delectus unde a culpa
+                voluptates, amet incidunt praesentium magni vero quos. Commodi exercitationem quos necessitatibus
+                maxime nemo ipsa laudantium a.
+                Alias placeat expedita a? Illum ducimus totam ex consequatur atque aperiam sed quam cum sint nihil
+                doloribus, qui architecto, voluptas delectus enim earum? Aliquam veniam fugit atque incidunt,
+                officia itaque?
+                Dicta harum possimus natus eligendi iste placeat eos nobis, excepturi consequatur similique minus
+                reiciendis delectus ducimus dolorum nesciunt nemo vero quisquam tempore rem repellendus, saepe
+                cupiditate obcaecati corrupti? Nihil, nostrum?
+                Neque, quia. Iusto harum itaque explicabo soluta veritatis hic, quasi quae voluptatum eaque
+                provident animi? Voluptatum tempora animi maxime, quam laborum repellendus, vel rem, ratione
+                voluptas libero earum harum unde.
+            </div>
+            <!-- Table for product specifications -->
+            <table>
+                <tr>
+                    <td>Model</td>
+                    <td>#87877767</td>
+                </tr>
+                <tr>
+                    <td>Style</td>
+                    <td>CLassic style</td>
+                </tr>
+                <tr>
+                    <td>Certificate</td>
+                    <td>ISO-898921212</td>
+                </tr>
+                <tr>
+                    <td>Size</td>
+                    <td>34mm x 450mm x 19mm</td>
+                </tr>
+                <tr>
+                    <td>Memory</td>
+                    <td>36GB RAM</td>
+                </tr>
+            </table>
+            <!-- Some special features of product -->
+            <div class="feature">
+                <ul>
+                    <li>Some great feature name here</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- You may like section containing different product -->
+        <aside id="may-like-products">
+            <h2>You may like</h2>
+            <div class="product">
+                <img src="images/clothes/1.jpg" alt="Shirt image">
+                <div>
+                    <p>Men Shirt Sleeve Polo Contrast</p>
+                    <p>$7.00 - $99.50</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/clothes/2.jpg" alt="Shirt image">
+                <div>
+                    <p>Men Shirt Sleeve Polo Contrast</p>
+                    <p>$7.00 - $99.50</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/clothes/3.jpg" alt="Brown jacket image">
+                <div>
+                    <p>Brown jacket for men</p>
+                    <p>$7.00 - $99.50</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/clothes/4.jpg" alt="Shirt image">
+                <div>
+                    <p>Jeans short for boys</p>
+                    <p>$7.00 - $99.50</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/clothes/5.jpg" alt="Shirt image">
+                <div>
+                    <p>Blue travel bag</p>
+                    <p>$7.00 - $99.50</p>
+                </div>
+            </div>
+
+
+        </aside>
+
+        <!-- Recommended products section -->
+        <section id="recommended-products">
+            <h2>Related Products</h2>
+            <div>
+                <div class="product">
+                    <div>
+                        <img src="images/gadgets/1.jpg" alt="Camera image">
+                    </div>
+                    <p>Caonon Camera Black</p>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="images/gadgets/2.jpg" alt="Headphone image">
+                    </div>
+                    <p>Gaming Headphone Special</p>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="images/gadgets/3.jpg" alt="Headphone image">
+                    </div>
+                    <p>Simple Headphone</p>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="images/home-decor/1.jpg" alt="Sofa chair image">
+                    </div>
+                    <p>Sofa Chair Beige</p>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="images/home-decor/2.jpg" alt="Office chair image">
+                    </div>
+                    <p>Office Chair Yellow</p>
+                    <p>$32.00-$40.00</p>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="images/home-decor/3.jpg" alt="Brown pot image">
+                    </div>
+                    <p>Brown pot</p>
+                    <p>$32.00-$40.00</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner at the end of page -->
+        <section id="banner">
+            <div>
+                <p>Super discount on more than 100 USD</p>
+                <p>Have you ever finally just write dummy info</p>
+            </div>
+            <button>Shop now</button>
+        </section>
+    </main>
+    <script src="javascript/basic.js"></script>
+</body>
+
+</html>
