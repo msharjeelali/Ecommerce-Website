@@ -67,3 +67,16 @@ function activeNavTab(obj) {
   document.querySelector(".p-active").className = "";
   obj.className = "p-active";
 }
+
+// This function is show and hide description of product on mobile view
+function showFullDetails(obj) {
+  const productDesc = document.querySelector("#summary");
+  console.log(obj.textContent);
+  if (obj.textContent === "Read more") {
+    productDesc.style.height = "fit-content";
+    obj.textContent = "Read less";
+  } else {
+    productDesc.style.height = "80px";
+    obj.textContent = "Read more";
+  }
+}
