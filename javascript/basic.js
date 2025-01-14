@@ -70,8 +70,7 @@ function activeNavTab(obj) {
 
 // This function is show and hide description of product on mobile view
 function showFullDetails(obj) {
-  const productDesc = document.querySelector("#summary");
-  console.log(obj.textContent);
+  const productDesc = document.querySelector(".summary");
   if (obj.textContent === "Read more") {
     productDesc.style.height = "fit-content";
     obj.textContent = "Read less";

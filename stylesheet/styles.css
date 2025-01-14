@@ -463,6 +463,7 @@ hr {
 
 @media screen and (min-width: 1025px) {
   #nav-logo > .menu-img,
+  #nav-logo > a:nth-child(1),
   #first-icons,
   #search-box-second,
   #second-nav-items {
