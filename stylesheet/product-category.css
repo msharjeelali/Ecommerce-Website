@@ -1,24 +1,45 @@
+:root {
+  --main-padding: 10vw;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+html {
+  font-size: 16x;
+}
+
 /* Style sheet contain styling for category page. */
 
 main {
   display: flex;
+  padding: 0 var(--main-padding);
 }
 
 input {
   accent-color: #0d6efd;
 }
 
-.navigation-list {
-  padding-top: 20px;
-  padding-bottom: 20px;
+/* Navigation list history */
+#nav-history {
+  color: #8b96af;
+  background-color: #f7fafc;
+  font-size: 1rem;
+  padding: 20px var(--main-padding);
   a {
-    font-size: 1rem;
     color: #8b96af;
-    margin: 0px 5px;
+    text-decoration: none;
+    margin-right: 5px;
   }
 }
 
+/* Side bar for filters */
 .sidebar {
+  width: 260px;
   z-index: 1;
   transition: left 0.5s linear;
   p {
@@ -42,6 +63,13 @@ input {
   }
   h2:hover {
     cursor: pointer;
+  }
+  > img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: -1;
+    width: 20px;
   }
 }
 
@@ -72,24 +100,17 @@ input {
   label {
     padding: 6px 16px;
   }
+  > label > input,
+  > label > img {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
 }
 
-.filters > label > input,
-.filters > label > img {
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.sidebar-dropdown > img {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  z-index: -1;
-  width: 20px;
-}
-
+/* Section that contain items list */
 .items-list {
   padding: 0px 10px;
+  float: left;
   > div {
     display: flex;
     flex-wrap: wrap;
@@ -229,16 +250,16 @@ input {
   padding: 0px 10px;
   margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  float: left;
+  flex-wrap: wrap;
   > img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e0e0e0;
   }
   .detail {
-    border-top: 1px solid #e0e0e0;
     padding: 10px;
+    width: 90%;
     .price {
       font-size: 1.25rem;
       font-weight: bold;
@@ -259,22 +280,24 @@ input {
     }
   }
   .favourite {
-    width: 0;
-    height: 0;
+    width: 10%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     img {
       width: 30px;
       height: 30px;
       border: 1px solid #e0e0e0;
       border-radius: 5px;
-      position: relative;
-      top: -110px;
-      right: -80px;
     }
   }
 }
 
 /* Active filters list */
 #active-filters {
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -298,6 +321,96 @@ input {
   .cancel-filter {
     margin-left: 5px;
   }
+}
+
+/* Price range slider */
+
+.custom-wrapper {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: height 2s linear;
+}
+
+.price-input .price-field {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.price-field span {
+  margin-right: 10px;
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+.price-field input {
+  flex: 1;
+  height: 30px;
+  font-size: 1rem;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 9px;
+  text-align: center;
+  border: 0px;
+  background: #e4e4e4;
+}
+
+.price-input {
+  width: 100%;
+  font-size: 19px;
+  color: #555;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.slider-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.slider-container {
+  height: 6px;
+  position: relative;
+  background: #e4e4e4;
+  border-radius: 5px;
+}
+
+.slider-container .price-slider {
+  height: 100%;
+  left: 25%;
+  right: 15%;
+  position: absolute;
+  border-radius: 5px;
+  background: #0d6efd;
+}
+
+.range-input {
+  position: relative;
+}
+
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: none;
+  top: -15px;
+  pointer-events: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-bottom: 10px;
+}
+
+/* Styles for the range thumb in WebKit browsers */
+input[type="range"]::-webkit-slider-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 70%;
+  background: #555;
+  pointer-events: auto;
+  -webkit-appearance: none;
 }
 
 /* Media Queries */

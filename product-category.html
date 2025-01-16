@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Category Page</title>
     <link href="stylesheet/styles.css" rel="stylesheet">
-    <link href="stylesheet/singlecategory.css" rel="stylesheet">
+    <link href="stylesheet/product-category.css" rel="stylesheet">
 </head>
 
 <body>
@@ -158,13 +158,16 @@
         </div>
     </header>
 
-    <div class="navigation-list padding">
-        <a href="index.html">Home</a> > <a href="category.html">Clothings</a> > <a href="#">Men wears</a> >
-        <a href="#">Summer clothing</a>
-    </div>
+    <!-- Navigation history -->
+    <nav id="nav-history">
+        <a href="index.html">Home</a> >
+        <a href="category.html">Clothing</a> >
+        <a href="category.html">Men's wear</a> >
+        <a href="item-detail.html">Summer clothing</a>
+    </nav>
 
     <!-- Main content of category page -->
-    <main class="padding">
+    <main>
         <aside class="sidebar">
             <p onclick="hideFilters();">x</p>
             <div id="category" class="sidebar-dropdown">
@@ -204,7 +207,25 @@
             </div>
             <div id="price" class="sidebar-dropdown">
                 <h2 onclick="toggleSideBarDropDown(this);">Price Range</h2>
-                <div class="filters">
+                <div class="custom-wrapper">
+                    <div class="price-input">
+                        <div class="price-field">
+                            <span>Min Price</span>
+                            <input type="number" class="min-input" value="2500">
+                        </div>
+                        <div class="price-field">
+                            <span>Max Price</span>
+                            <input type="number" class="max-input" value="8500">
+                        </div>
+                    </div>
+                    <div class="slider-container">
+                        <div class="price-slider">
+                        </div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="min-range" min="0" max="10000" value="2500" step="1">
+                        <input type="range" class="max-range" min="0" max="10000" value="8500" step="1">
+                    </div>
                 </div>
                 <img src="images/expand_more.png" alt="Expand more image">
             </div>
@@ -265,34 +286,6 @@
                 </div>
             </div>
             <div id="active-filters">
-                <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
-                </div>
-                <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
-                </div>
-                <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
-                </div>
-                <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
-                </div>
-                <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
-                </div>
-                <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
-                </div>
-                <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
-                </div>
                 <div class="item-filter">
                     <p class="name-filter">Samsung</p>
                     <p class="cancel-filter">X</p>
