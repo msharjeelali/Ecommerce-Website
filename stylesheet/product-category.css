@@ -399,7 +399,7 @@ input::-webkit-inner-spin-button {
   top: -15px;
   pointer-events: none;
   cursor: pointer;
-  -webkit-appearance: none;
+  --webkit-appearance: none;
   margin-bottom: 10px;
 }
 
