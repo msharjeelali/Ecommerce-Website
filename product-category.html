@@ -123,13 +123,13 @@
                 </div>
                 <!-- Nav items list for small screens-->
                 <div id="second-nav-items" class="flex nav-list">
-                    <a href="#">All category</a>
-                    <a href="#">Gadget</a>
-                    <a href="#">Clothes</a>
-                    <a href="#">Accessories</a>
-                    <a href="#">Fitness</a>
-                    <a href="#">Health</a>
-                    <a href="#">Beauty</a>
+                    <a href="category.html">All category</a>
+                    <a href="category.html">Gadget</a>
+                    <a href="category.html">Clothes</a>
+                    <a href="category.html">Accessories</a>
+                    <a href="category.html">Fitness</a>
+                    <a href="category.html">Health</a>
+                    <a href="category.html">Beauty</a>
                 </div>
             </div>
         </nav>
@@ -207,24 +207,22 @@
             </div>
             <div id="price" class="sidebar-dropdown">
                 <h2 onclick="toggleSideBarDropDown(this);">Price Range</h2>
-                <div class="custom-wrapper">
-                    <div class="price-input">
-                        <div class="price-field">
-                            <span>Min Price</span>
-                            <input type="number" class="min-input" value="2500">
-                        </div>
-                        <div class="price-field">
-                            <span>Max Price</span>
-                            <input type="number" class="max-input" value="8500">
-                        </div>
+                <div class="range_container filters">
+                    <div class="sliders_control">
+                        <input id="fromSlider" type="range" value="10" min="0" max="100" />
+                        <input id="toSlider" type="range" value="40" min="0" max="100" />
                     </div>
-                    <div class="slider-container">
-                        <div class="price-slider">
+                    <div class="form_control">
+                        <div class="form_control_container">
+                            <div class="form_control_container__time">Min</div>
+                            <input class="form_control_container__time__input" type="number" id="fromInput" value="10"
+                                min="0" max="100" />
                         </div>
-                    </div>
-                    <div class="range-input">
-                        <input type="range" class="min-range" min="0" max="10000" value="2500" step="1">
-                        <input type="range" class="max-range" min="0" max="10000" value="8500" step="1">
+                        <div class="form_control_container">
+                            <div class="form_control_container__time">Max</div>
+                            <input class="form_control_container__time__input" type="number" id="toInput" value="40"
+                                min="0" max="100" />
+                        </div>
                     </div>
                 </div>
                 <img src="images/expand_more.png" alt="Expand more image">
@@ -258,6 +256,7 @@
             </div>
         </aside>
         <section class="items-list">
+
             <div id="controls">
                 <p>9,999 items in <strong>Mobile accessory</strong></p>
                 <div>
@@ -288,31 +287,31 @@
             <div id="active-filters">
                 <div class="item-filter">
                     <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
+                    <p class="cancel-filter" onclick="removeFilter(this);">X</p>
                 </div>
                 <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
+                    <p class="name-filter">Apple</p>
+                    <p class="cancel-filter" onclick="removeFilter(this);">X</p>
                 </div>
                 <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
+                    <p class="name-filter">Silver</p>
+                    <p class="cancel-filter" onclick="removeFilter(this);">X</p>
                 </div>
                 <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
+                    <p class="name-filter">Gold</p>
+                    <p class="cancel-filter" onclick="removeFilter(this);">X</p>
                 </div>
                 <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
+                    <p class="name-filter">Mettalic</p>
+                    <p class="cancel-filter" onclick="removeFilter(this);">X</p>
                 </div>
                 <div class="item-filter">
-                    <p class="name-filter">Samsung</p>
-                    <p class="cancel-filter">X</p>
+                    <p class="name-filter">Under 100,000</p>
+                    <p class="cancel-filter" onclick="removeFilter(this);">X</p>
                 </div>
             </div>
             <div>
-                <div class="item-detail grid-view">
+                <div class="item-detail list-view" onclick="openPage();">
                     <img src=" images/gadgets/1.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -332,7 +331,7 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail grid-view">
+                <div class="item-detail list-view" onclick="openPage();">
                     <img src=" images/gadgets/2.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -352,7 +351,7 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail grid-view">
+                <div class="item-detail list-view" onclick="openPage();">
                     <img src=" images/gadgets/3.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -372,7 +371,7 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail grid-view">
+                <div class="item-detail list-view" onclick="openPage();">
                     <img src=" images/gadgets/4.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -392,7 +391,7 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail grid-view">
+                <div class="item-detail list-view" onclick="openPage();">
                     <img src=" images/gadgets/5.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -412,7 +411,7 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail grid-view">
+                <div class="item-detail list-view" onclick="openPage();">
                     <img src=" images/gadgets/6.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -432,7 +431,7 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail grid-view">
+                <div class="item-detail list-view" onclick="openPage();">
                     <img src=" images/gadgets/7.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -452,7 +451,7 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail grid-view">
+                <div class="item-detail list-view" onclick="openPage();">
                     <img src=" images/gadgets/8.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -472,7 +471,7 @@
                         <img src="images/favorite.png" alt="Favourite icon">
                     </div>
                 </div>
-                <div class="item-detail grid-view">
+                <div class="item-detail list-view" onclick="openPage();">
                     <img src=" images/gadgets/9.jpg" alt="Canon camera image">
                     <div class="detail">
                         <h2 class="title">Canon Camera E0S 2000, Black 10x zoom</h2>
@@ -567,6 +566,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 <script src="javascript/basic.js"></script>
 
