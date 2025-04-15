@@ -1,0 +1,26 @@
+# Ignore Python cache files (if using Python)
+_pycache_/
+*.pyc
+
+# Ignore environment/configuration files (if any)
+.env
+config.json
+credentials.json
+*.log
+
+# Ignore Node.js files (if using npm or node)
+node_modules/
+package-lock.json
+
+# Ignore build/dist folders
+dist/
+build/
+
+# Mac OS & Windows hidden files
+.DS_Store
+Thumbs.db
+
+# VS Code or IDE specific folders
+.vscode/
+.idea/
+*.swp
